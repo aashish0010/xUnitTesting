@@ -16,13 +16,10 @@ namespace UnitTestingTest.Tests.CompanyTests
             prop.Salary = 1000000;
             CompanyManager manager = new CompanyManager();
 
-
             //Act
-
             var results = manager.AddCompany(prop);
 
             //Assert
-
             results.Should().NotBeEmpty().And.HaveCount(1).And.
                 ContainItemsAssignableTo<CompanyProp>();
         }
@@ -42,7 +39,6 @@ namespace UnitTestingTest.Tests.CompanyTests
             var items = manager.AddCompany(companyProp);
 
             //Assert
-
             items.Should().NotBeNull();
             items.Count().Should().Be(1);
             items.Should().ContainItemsAssignableTo<CompanyProp>();
