@@ -5679,11 +5679,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj",
       "projectName": "UnitTestingTest.Tests",
-      "projectPath": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj",
+      "projectPath": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj",
       "packagesPath": "C:\\Users\\pudas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\obj\\",
+      "outputPath": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5704,8 +5704,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj": {
-              "projectPath": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj"
+            "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj": {
+              "projectPath": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj"
             }
           }
         }

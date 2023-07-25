@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tDZXSdr4p/alNpLV2OqAjM9ETFgjPWC0sW1ObKiunnLJ2fxInNwjyDt8FMnCYAXgaJa5WJFdLVM/ksPxhf5+6g==",
+  "dgSpecHash": "f6YW6gAvtXywVbQhd1A+uVdc9K2Sy/Fmdo59f7WIX6iQBbYnA0QxrVk0nr1EPBeYXL4LYwdx7V81nUVf2XNkAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj",
+  "projectFilePath": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pudas\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\pudas\\.nuget\\packages\\fluentassertions\\6.11.0\\fluentassertions.6.11.0.nupkg.sha512",
