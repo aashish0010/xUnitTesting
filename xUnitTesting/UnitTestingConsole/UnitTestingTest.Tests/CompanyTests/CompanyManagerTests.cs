@@ -1,11 +1,25 @@
 ﻿using FluentAssertions;
+using FluentAssertions.Equivalency.Tracing;
+using FluentAssertions.Extensions;
 using UnitTestingConsole;
 using UnitTestingConsole.Company;
+using UnitTestingConsole.Employee;
+using FakeItEasy;
 
 namespace UnitTestingTest.Tests.CompanyTests
 {
     public class CompanyManagerTests
     {
+        public CompanyManager _companyManager;
+        public IEmployeeServices _services;
+        public CompanyManagerTests()
+        {
+            //Dependency
+            _services = A.Fake<IEmployeeServices>();
+
+            //SUT
+            _companyManager = new CompanyManager(_services);
+        }
         [Fact]
         public void CompanyManager_AddCompany_ListOfCompany()
         {
@@ -14,15 +28,25 @@ namespace UnitTestingTest.Tests.CompanyTests
             prop.Name = "Aashish";
             prop.Description = "Manager";
             prop.Salary = 1000000;
-            CompanyManager manager = new CompanyManager();
+            prop.CreateDate = DateTime.Now;
+
 
             //Act
-            var results = manager.AddCompany(prop);
+            IEnumerable<CompanyProp> results = _companyManager.AddCompany(prop);
 
             //Assert
             results.Should().NotBeEmpty().And.HaveCount(1).And.
-                ContainItemsAssignableTo<CompanyProp>();
+                ContainEquivalentOf(prop);
+            results.Should().Contain(x => x.Name == "Aashish");
+
+            foreach(var items in results)
+            {
+                items.CreateDate.Should().BeAfter(1.January(2010)).And.
+                    BeBefore(1.January(2030));
+            }
         }
+
+
         [Theory]
         [InlineData("Aashish", "Manager", 8000000)]
         [InlineData("Mahesh", "Teacher", 7000000)]
@@ -33,15 +57,56 @@ namespace UnitTestingTest.Tests.CompanyTests
             companyProp.Name = nameOfImp;
             companyProp.Salary = salary;
             companyProp.Description = post;
-            CompanyManager manager = new CompanyManager();
+            companyProp.CreateDate = DateTime.Now;
 
             //Act
-            var items = manager.AddCompany(companyProp);
+            var items = _companyManager.AddCompany(companyProp);
 
             //Assert
+
             items.Should().NotBeNull();
             items.Count().Should().Be(1);
             items.Should().ContainItemsAssignableTo<CompanyProp>();
         }
+        [Fact]
+        public void CompanyManager_GetCompanyList_CompanyModel()
+        {
+            //Arrange
+            CompanyProp companyProp = new CompanyProp();
+            companyProp.Name = "Aashish";
+            companyProp.Salary = 20000;
+            companyProp.Description = "Manager";
+            companyProp.CreateDate = new DateTime(2010,02,01);
+
+            //Act
+            var items= _companyManager.GetCompanyList(companyProp);
+
+            //Assert
+            items.Should().BeOfType<CompanyProp>();
+            items.CreateDate.Should().BeBefore(1.January(2030)).
+                And.BeAfter(1.January(2010));
+            items.CreateDate.Should<DateTime>();
+            items.Name.Should().BeEquivalentTo(companyProp.Name);
+            items.Salary.Should().Be(companyProp.Salary);
+            items.Description.Should().Contain(companyProp.Description);
+        }
+        [Fact]
+
+        public void Employee_EmployeeServices_ReturnString()
+        {
+            //Arrange
+            string username = "Aashish";
+            A.CallTo(() => _services.GetEmployeeDetail(username)).Returns("Aashish");
+
+            //Act
+            var items= _companyManager.GetEmployee(username);
+
+            //Assert
+            items.Should().NotBeNullOrEmpty();
+
+        }
+
+
+
     }
 }
