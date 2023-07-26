@@ -1,0 +1,54 @@
+﻿@model XUnitTestingMVC.Models.Company
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Page Title</title>
+    <!-- Other head content -->
+</head>
+<body>
+
+
+@using (Html.BeginForm("RegisterCompany", "Home",FormMethod.Post))
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                @Html.LabelFor(x=>x.Name)
+                @Html.TextBoxFor(x=>x.Name,new{@class = "form-control"})
+            </div>
+            <div class="col-4">
+                @Html.LabelFor(x=>x.Description)
+                @Html.TextBoxFor(x=>x.Description,new{@class = "form-control"})
+            </div>
+            <div class="col-4">
+                @Html.LabelFor(x=>x.City)
+                @Html.TextBoxFor(x=>x.City,new{@class = "form-control"})
+            </div>
+            <div class="col-4">
+                @Html.LabelFor(x=>x.Address)
+                @Html.TextBoxFor(x=>x.Address,new{@class = "form-control"})
+            </div>
+            <div class="col-4">
+                @Html.LabelFor(x=>x.Country)
+                @Html.TextBoxFor(x=>x.Country,new{@class = "form-control"})
+            </div>
+            <div class="col-12">
+                <input type="submit" value="Submit" class="btn btn-success">
+            </div>
+        </div>
+    </div>
+}
+@section Scripts {
+        @if (TempData["Message"] != null)
+        {
+            <script>
+                var msg = '@TempData["Message"]';
+                alert(msg);
+            </script>
+        }
+
+}
+
+</body>
+</html>
