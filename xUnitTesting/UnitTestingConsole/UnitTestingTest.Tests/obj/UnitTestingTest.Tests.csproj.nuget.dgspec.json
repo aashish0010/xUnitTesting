@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj": {}
+    "D:\\Mine\\xUnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj": {
+    "D:\\Mine\\xUnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj",
+        "projectUniqueName": "D:\\Mine\\xUnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj",
         "projectName": "UnitTestingConsole",
-        "projectPath": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj",
-        "packagesPath": "C:\\Users\\pudas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\obj\\",
+        "projectPath": "D:\\Mine\\xUnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj",
+        "packagesPath": "C:\\Users\\INFI-63\\.nuget\\packages\\",
+        "outputPath": "D:\\Mine\\xUnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\pudas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\INFI-63\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,24 +60,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj": {
+    "D:\\Mine\\xUnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj",
+        "projectUniqueName": "D:\\Mine\\xUnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj",
         "projectName": "UnitTestingTest.Tests",
-        "projectPath": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj",
-        "packagesPath": "C:\\Users\\pudas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\obj\\",
+        "projectPath": "D:\\Mine\\xUnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\UnitTestingTest.Tests.csproj",
+        "packagesPath": "C:\\Users\\INFI-63\\.nuget\\packages\\",
+        "outputPath": "D:\\Mine\\xUnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingTest.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\pudas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\INFI-63\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -85,14 +86,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj": {
-                "projectPath": "C:\\Users\\pudas\\OneDrive\\Desktop\\UnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj"
+              "D:\\Mine\\xUnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj": {
+                "projectPath": "D:\\Mine\\xUnitTesting\\xUnitTesting\\UnitTestingConsole\\UnitTestingConsole\\UnitTestingConsole.csproj"
               }
             }
           }
@@ -148,7 +150,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
