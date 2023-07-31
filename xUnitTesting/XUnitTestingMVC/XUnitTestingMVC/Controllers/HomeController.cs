@@ -9,11 +9,9 @@ namespace XUnitTestingMVC.Controllers
     {
         private readonly ICompanyServices _company;
 
-        private readonly ILogger<HomeController> _logger;
-        public HomeController(ICompanyServices company, ILogger<HomeController> logger)
+        public HomeController(ICompanyServices company)
         {
             _company = company;
-            _logger = logger;
         }
 
 
